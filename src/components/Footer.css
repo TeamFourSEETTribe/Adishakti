@@ -1,0 +1,82 @@
+/* Styles for HTML, body, .App, and main elements */
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Styles for Footer component */
+  .footer {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    border-top: 2px solid #5c5470;
+  }
+  
+  .footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer li {
+    margin: 0 15px;
+  }
+  
+  .footer li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    position: relative;
+  }
+  
+  .footer li a:hover {
+    color: #2b2e4a;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }
+  
+  .footer li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #f1f1f1;
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+  }
+  
+  .footer li a:hover::after {
+    width: 100%;
+    left: 0;
+    background-color: #f1f1f1;
+  }
+  
+  .footer p {
+    margin: 20px 0 0;
+    font-size: 0.9rem;
+    color: #dcdcdc;
+  }
